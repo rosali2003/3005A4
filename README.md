@@ -1,24 +1,23 @@
-# README
+Running the project
+1. Clone the github repository
+2. Ensure your system has ruby version 3.2.2 and rails version 7.0.8. If you don't have ruby on your system, please refer to this doc to install ruby: https://www.ruby-lang.org/en/documentation/installation/
+and this doc to install rails: https://guides.rubyonrails.org/v5.1/getting_started.html
+3. After installing the ruby and rails, run `rails db:migrate` to run all the migrations
+4. To run the server, run `rails s`
+5. To connect to the postgres server without pgAdmin, you can use the rails console by running `rails c`
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+get_all_students
+- this function grabs all tuples of Student
 
-* Ruby version
+add_student
+- this function creates a new student
 
-* System dependencies
+update
+- this function updates the student's email
 
-* Configuration
+destroy
+- this function deletes a student
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Video:
+https://youtu.be/iGGN1lmvgg4

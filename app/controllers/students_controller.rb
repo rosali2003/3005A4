@@ -2,7 +2,7 @@ class StudentsController < ApplicationController
   before_action :set_student, only: %i[ show edit update destroy ]
 
   # GET /students or /students.json
-  def index
+  def get_all_students
     @students = Student.all
   end
 
@@ -20,7 +20,7 @@ class StudentsController < ApplicationController
   end
 
   # POST /students or /students.json
-  def create
+  def add_new_student
     @student = Student.new(student_params)
 
     respond_to do |format|

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  # Resourceful routes for students
   resources :students
-
-  # If you need a custom root route, you can specify it here. For example:
-  # root 'students#index'
+  get 'get_all_students', to: 'students#get_all_students', as: 'get_all_students'
+  post 'add_new_student', to: 'students#add_new_student', as: 'add_new_student'
+  root 'students#get_all_students'
 end
+ 

@@ -4,7 +4,8 @@ Running the project
 and this doc to install rails: https://guides.rubyonrails.org/v5.1/getting_started.html
 3. After installing the ruby and rails, run `rails db:migrate` to run all the migrations
 4. To run the server, run `rails s`
-5. To connect to the postgres server without pgAdmin, you can use the rails console by running `rails c`
+5. To connect to the postgres database without pgAdmin, you can use the rails console by running `rails c`
+6. To connect to postgres server with pgAdmin, you can connect to pgadmin using your postgres role and password. Also ensure to go to database.yml and change the username to password field to your role and password
 
 
 get_all_students
